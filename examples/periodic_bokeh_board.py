@@ -24,6 +24,7 @@ def main():
 
     def sigmoid_updater(steps):
         def update_cb(lib_inst, figure_instance, previous_data, next_data):
+            print("update")
             figure_instance[1].data_source.data["y"] = next_data[1]
             figure_instance[1].glyph.line_alpha = 1 - 0.8 * abs(steps[0])
 
