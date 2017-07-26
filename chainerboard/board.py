@@ -32,6 +32,12 @@ class Board(object):
 
         self._renderer.start(update)
 
+    def stop(self):
+        """
+            Stop the Board process
+        """
+        self._renderer.stop()
+
     def get_renderer(self):
         return self._renderer
 

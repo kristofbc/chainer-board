@@ -14,7 +14,7 @@ from functools import partial
 class BookehWebRenderer(Renderer):
     """
         Render Element(s) using the "bookeh" library
-        This Renderer can only be used with a PeriodicBoard
+        This Renderer can only be used with a basic Board
     """
     def __init__(self, name, elements=[], url="localhost", port=5006, refresh_delay=1000):
         """

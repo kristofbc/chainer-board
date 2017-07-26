@@ -1,6 +1,6 @@
 import numpy as np
 
-from chainerboard.periodic_board import PeriodicBoard
+from chainerboard.board import Board
 from chainerboard.element import Element
 from chainerboard.bookeh_renderer import BookehWebRenderer
 
@@ -53,7 +53,7 @@ def main():
             steps[0] +=1
         return updater
 
-    board = PeriodicBoard(renderer, board_updater(N_STEP))
+    board = Board(renderer, board_updater(N_STEP))
 
     """ Start the Board """
     board.run()
